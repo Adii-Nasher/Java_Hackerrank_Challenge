@@ -29,8 +29,10 @@ public class Person {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of persons:");
 		int T = sc.nextInt();
 		for (int i = 0; i < T; i++) {
+			System.out.println("Enter the age of those persons" +(i+1)+":");
 			int age = sc.nextInt();
 			Person p = new Person(age);
 			p.amIOld();
