@@ -1,2 +1,6 @@
-# 30-days-of-code-challenge
-30 Days of Code Hackerrank challenge
+# Day 0 - Hello, World.
+# Day 1 - Data Types.
+# Day 2 - Operators.
+# Day 3 - Intro to Conditional Statements.
+# Day 4 - Class vs Instance.
+# Day 5 - Loops.
