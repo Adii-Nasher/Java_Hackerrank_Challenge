@@ -1,33 +1,39 @@
-import java.util.*;
+// Code following clean code principles
+import java.util.Scanner;
 
 public class DataTypes {
-	
+    
     public static void main(String[] args) {
         int i = 4;
         double d = 4.0;
-        String s = "HackerRank ";
-		
-        Scanner scan = new Scanner(System.in);
-
-/* Declare second integer, double, and String variables. */
-    int i2;
-    double d2;
-    String s2;
-/* Read and save an integer, double, and String to your variables.*/
-    i2=scan.nextInt();
-    d2=scan.nextDouble();
-    scan.nextLine();
-    s2=scan.nextLine();
-
-        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        String s = "HackerRank";
         
-/* Print the sum of both integer variables on a new line. */
-    System.out.println(i+i2);
-/* Print the sum of the double variables on a new line. */
-    System.out.println(d+d2);
-/* Concatenate and print the String variables on a new line; 
-the 's' variable above should be printed first. */
-    System.out.println(s+s2);
-        scan.close();
+        Scanner scanner = new Scanner(System.in);
+
+        // Declare variables to store user input
+        int i2;
+        double d2;
+        String s2;
+
+        // Prompt the user to enter an integer, a double, and a string
+        System.out.print("Please enter an integer: ");
+        i2 = scanner.nextInt();
+        System.out.print("Please enter a double: ");
+        d2 = scanner.nextDouble();
+        scanner.nextLine();
+        System.out.print("Please enter a string: ");
+        s2 = scanner.nextLine();
+
+        // Print the sum of the two integer variables
+        System.out.println("The sum of " + i + " and " + i2 + " is " + (i + i2));
+
+        // Print the sum of the two double variables
+        System.out.println("The sum of " + d + " and " + d2 + " is " + (d + d2));
+
+        // Concatenate and print the two string variables
+        System.out.print("The concatenated string is " + s + s2);
+
+        // Close the scanner object
+        scanner.close();
     }
 }
